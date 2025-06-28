@@ -194,6 +194,146 @@
           "position": 4
         }
       ]
+    },
+    {
+      "id": 6,
+      "russian": "Мальчик пишет письмо другу",
+      "french": "Le garçon écrit une lettre à un ami",
+      "words": [
+        {
+          "id": 21,
+          "russian": "Мальчик",
+          "french": "Le garçon",
+          "case": "nominative",
+          "explanation": "Nom masculin au cas nominatif. C'est le sujet de la phrase.",
+          "position": 0
+        },
+        {
+          "id": 22,
+          "russian": "пишет",
+          "french": "écrit",
+          "case": null,
+          "explanation": "Verbe 'écrire' conjugué à la 3ème personne du singulier au présent.",
+          "position": 1
+        },
+        {
+          "id": 23,
+          "russian": "письмо",
+          "french": "lettre",
+          "case": "accusative",
+          "explanation": "Nom neutre au cas accusatif. C'est l'objet direct de l'action.",
+          "position": 2
+        },
+        {
+          "id": 24,
+          "russian": "другу",
+          "french": "à un ami",
+          "case": "dative",
+          "explanation": "Nom masculin au cas datif. Le datif indique le destinataire de l'action (à qui on écrit).",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "russian": "Мама гордится сыном",
+      "french": "La mère est fière de son fils",
+      "words": [
+        {
+          "id": 25,
+          "russian": "Мама",
+          "french": "La mère",
+          "case": "nominative",
+          "explanation": "Nom féminin au cas nominatif. Sujet de la phrase.",
+          "position": 0
+        },
+        {
+          "id": 26,
+          "russian": "гордится",
+          "french": "est fière",
+          "case": null,
+          "explanation": "Verbe 'être fier' conjugué à la 3ème personne du singulier au présent. Demande l'instrumental pour l'objet de la fierté.",
+          "position": 1
+        },
+        {
+          "id": 27,
+          "russian": "сыном",
+          "french": "de son fils",
+          "case": "instrumental",
+          "explanation": "Nom masculin au cas instrumental après le verbe 'гордиться' (être fier de). L'instrumental est utilisé ici pour indiquer l'objet de la fierté.",
+          "position": 2
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "russian": "Я интересуюсь музыкой",
+      "french": "Je m'intéresse à la musique",
+      "words": [
+        {
+          "id": 28,
+          "russian": "Я",
+          "french": "Je",
+          "case": "nominative",
+          "explanation": "Pronom personnel à la 1ère personne du singulier au nominatif. Sujet de la phrase.",
+          "position": 0
+        },
+        {
+          "id": 29,
+          "russian": "интересуюсь",
+          "french": "m'intéresse",
+          "case": null,
+          "explanation": "Verbe 's'intéresser' conjugué à la 1ère personne du singulier. Demande l'instrumental pour l'objet de l'intérêt.",
+          "position": 1
+        },
+        {
+          "id": 30,
+          "russian": "музыкой",
+          "french": "à la musique",
+          "case": "instrumental",
+          "explanation": "Nom féminin au cas instrumental après le verbe 'интересоваться' (s'intéresser à). L'instrumental est utilisé ici pour indiquer l'objet de l'intérêt.",
+          "position": 2
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "russian": "Книга лежит на столе",
+      "french": "Le livre est sur la table",
+      "words": [
+        {
+          "id": 31,
+          "russian": "Книга",
+          "french": "Le livre",
+          "case": "nominative",
+          "explanation": "Nom féminin au nominatif. Sujet de la phrase.",
+          "position": 0
+        },
+        {
+          "id": 32,
+          "russian": "лежит",
+          "french": "est (posé)",
+          "case": null,
+          "explanation": "Verbe 'être posé' conjugué à la 3ème personne du singulier au présent.",
+          "position": 1
+        },
+        {
+          "id": 33,
+          "russian": "на",
+          "french": "sur",
+          "case": null,
+          "explanation": "Préposition qui demande le prépositionnel pour indiquer l'emplacement.",
+          "position": 2
+        },
+        {
+          "id": 34,
+          "russian": "столе",
+          "french": "la table",
+          "case": "prepositional",
+          "explanation": "Nom masculin au prépositionnel après la préposition 'на'. Le prépositionnel est utilisé ici pour indiquer l'emplacement.",
+          "position": 3
+        }
+      ]
     }
   ],
   "cases": {
@@ -307,6 +447,62 @@
       ],
       "correct": "genitive",
       "explanation": "'Меня' est au génitif après la préposition 'у' qui exprime la possession."
+    },
+    {
+      "id": 6,
+      "sentenceId": 6,
+      "wordId": 24,
+      "question": "Quel est le cas du mot 'другу' dans cette phrase ?",
+      "options": [
+        { "case": "nominative", "label": "Nominatif" },
+        { "case": "accusative", "label": "Accusatif" },
+        { "case": "dative", "label": "Datif" },
+        { "case": "genitive", "label": "Génitif" }
+      ],
+      "correct": "dative",
+      "explanation": "'Другу' est au datif car il indique le destinataire de l'action (à qui on écrit la lettre)."
+    },
+    {
+      "id": 7,
+      "sentenceId": 7,
+      "wordId": 27,
+      "question": "Quel est le cas du mot 'сыном' dans cette phrase ?",
+      "options": [
+        { "case": "nominative", "label": "Nominatif" },
+        { "case": "accusative", "label": "Accusatif" },
+        { "case": "instrumental", "label": "Instrumental" },
+        { "case": "genitive", "label": "Génitif" }
+      ],
+      "correct": "instrumental",
+      "explanation": "'Сыном' est au cas instrumental car il suit le verbe 'гордиться' qui demande ce cas."
+    },
+    {
+      "id": 8,
+      "sentenceId": 8,
+      "wordId": 30,
+      "question": "Quel est le cas du mot 'музыкой' dans cette phrase ?",
+      "options": [
+        { "case": "nominative", "label": "Nominatif" },
+        { "case": "accusative", "label": "Accusatif" },
+        { "case": "instrumental", "label": "Instrumental" },
+        { "case": "genitive", "label": "Génitif" }
+      ],
+      "correct": "instrumental",
+      "explanation": "'Музыкой' est au cas instrumental car il suit le verbe 'интересоваться' qui demande ce cas."
+    },
+    {
+      "id": 9,
+      "sentenceId": 9,
+      "wordId": 34,
+      "question": "Pourquoi 'столе' est-il au prépositionnel ?",
+      "options": [
+        { "case": "prepositional", "label": "Après la préposition 'на'" },
+        { "case": "accusative", "label": "C'est l'objet direct" },
+        { "case": "genitive", "label": "Il exprime la possession" },
+        { "case": "dative", "label": "C'est le destinataire" }
+      ],
+      "correct": "prepositional",
+      "explanation": "'Столе' est au prépositionnel car il suit la préposition 'на' qui demande ce cas pour indiquer l'emplacement."
     }
   ]
 }
