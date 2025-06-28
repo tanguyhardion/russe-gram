@@ -113,11 +113,6 @@
         <div class="footer-text">
           <p>&copy; 2025 RusseGram - Apprenez les cas russes facilement</p>
         </div>
-        <div class="footer-links">
-          <a href="#" class="footer-link">Aide</a>
-          <a href="#" class="footer-link">Contact</a>
-          <router-link to="/about" class="footer-link">À propos</router-link>
-        </div>
       </div>
     </footer>
   </div>
@@ -298,21 +293,6 @@ function closeMobileMenu() {
 .footer-text p {
   margin: 0;
   color: #9ca3af;
-}
-
-.footer-links {
-  display: flex;
-  gap: 2rem;
-}
-
-.footer-link {
-  color: #d1d5db;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.footer-link:hover {
-  color: white;
 }
 
 @media (max-width: 768px) {
