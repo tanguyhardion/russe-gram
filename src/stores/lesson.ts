@@ -6,13 +6,13 @@ import lessonsData from '@/data/lessons.json'
 export const useLessonStore = defineStore('lesson', () => {
   // Load lesson data
   const data = ref<LessonData>(lessonsData as LessonData)
-  
+
   // Application state
   const appState = ref<AppState>({
     currentSentence: null,
     selectedWord: null,
     showTooltip: false,
-    tooltipPosition: { x: 0, y: 0 }
+    tooltipPosition: { x: 0, y: 0 },
   })
 
   // Computed getters
@@ -41,12 +41,12 @@ export const useLessonStore = defineStore('lesson', () => {
   }
 
   function getSentenceById(id: number): Sentence | undefined {
-    return data.value.sentences.find(sentence => sentence.id === id)
+    return data.value.sentences.find((sentence) => sentence.id === id)
   }
 
   function getWordById(sentenceId: number, wordId: number): Word | undefined {
     const sentence = getSentenceById(sentenceId)
-    return sentence?.words.find(word => word.id === wordId)
+    return sentence?.words.find((word) => word.id === wordId)
   }
 
   function getRandomSentence(): Sentence {
@@ -75,6 +75,6 @@ export const useLessonStore = defineStore('lesson', () => {
     getSentenceById,
     getWordById,
     getRandomSentence,
-    getCaseColor
+    getCaseColor,
   }
 })

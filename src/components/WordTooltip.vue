@@ -1,27 +1,20 @@
 <template>
   <Teleport to="body">
-    <div 
-      v-if="visible"
-      class="tooltip-backdrop"
-      @click="$emit('close')"
-    >
-      <div
-        class="word-tooltip"
-        :style="tooltipStyle"
-        @click.stop
-      >
+    <div v-if="visible" class="tooltip-backdrop" @click="$emit('close')">
+      <div class="word-tooltip" :style="tooltipStyle" @click.stop>
         <div class="tooltip-header">
           <div class="word-info">
             <span class="russian-word">{{ word.russian }}</span>
             <span class="french-word">{{ word.french }}</span>
           </div>
-          <button 
-            class="close-button"
-            @click="$emit('close')"
-            aria-label="Fermer"
-          >
+          <button class="close-button" @click="$emit('close')" aria-label="Fermer">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
             </svg>
           </button>
         </div>
@@ -93,30 +86,30 @@ const tooltipStyle = computed(() => {
   const { x, y } = props.position
   const viewportWidth = window.innerWidth
   const viewportHeight = window.innerHeight
-  
+
   // Tooltip dimensions (approximate)
   const tooltipWidth = 350
   const tooltipHeight = 300
-  
+
   let left = x - tooltipWidth / 2
   let top = y - tooltipHeight - 20
-  
+
   // Adjust horizontal position if it goes off-screen
   if (left < 20) {
     left = 20
   } else if (left + tooltipWidth > viewportWidth - 20) {
     left = viewportWidth - tooltipWidth - 20
   }
-  
+
   // Adjust vertical position if it goes off-screen
   if (top < 20) {
     top = y + 40 // Show below the word instead
   }
-  
+
   return {
     left: `${left}px`,
     top: `${top}px`,
-    maxWidth: `${Math.min(tooltipWidth, viewportWidth - 40)}px`
+    maxWidth: `${Math.min(tooltipWidth, viewportWidth - 40)}px`,
   }
 })
 
@@ -158,7 +151,9 @@ onUnmounted(() => {
   position: fixed;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
   padding: 1.5rem;
   max-width: 350px;
   z-index: 1001;

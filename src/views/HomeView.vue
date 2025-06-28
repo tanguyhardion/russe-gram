@@ -12,26 +12,36 @@
           <router-link to="/learn" class="cta-button primary">
             <span>Commencer à apprendre</span>
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 7l5 5m0 0l-5 5m5-5H6"
+              />
             </svg>
           </router-link>
           <router-link to="/quiz" class="cta-button secondary">
             <span>Tester mes connaissances</span>
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+              />
             </svg>
           </router-link>
         </div>
       </div>
       <div class="hero-image">
         <div class="floating-cards">
-          <div 
+          <div
             v-for="(card, index) in previewCards"
             :key="card.case"
             class="preview-card"
-            :style="{ 
+            :style="{
               '--delay': `${index * 0.2}s`,
-              '--color': card.color
+              '--color': card.color,
             }"
           >
             <span class="card-text">{{ card.text }}</span>
@@ -52,7 +62,8 @@
           <div class="feature-icon">📚</div>
           <h3 class="feature-title">Apprentissage interactif</h3>
           <p class="feature-description">
-            Cliquez sur les mots pour découvrir leurs cas grammaticaux et leurs explications détaillées
+            Cliquez sur les mots pour découvrir leurs cas grammaticaux et leurs explications
+            détaillées
           </p>
         </div>
         <div class="feature-card">
@@ -66,14 +77,16 @@
           <div class="feature-icon">🏆</div>
           <h3 class="feature-title">Système de points</h3>
           <p class="feature-description">
-            Gagnez des points et débloquez de nouveaux niveaux en progressant dans votre apprentissage
+            Gagnez des points et débloquez de nouveaux niveaux en progressant dans votre
+            apprentissage
           </p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">🔥</div>
           <h3 class="feature-title">Suivi des progrès</h3>
           <p class="feature-description">
-            Maintenez votre motivation avec le suivi de votre série quotidienne et de vos statistiques
+            Maintenez votre motivation avec le suivi de votre série quotidienne et de vos
+            statistiques
           </p>
         </div>
       </div>
@@ -82,7 +95,7 @@
     <div class="cases-preview">
       <h2 class="section-title">Les 6 cas russes</h2>
       <div class="cases-grid">
-        <div 
+        <div
           v-for="(caseInfo, caseName) in lessonStore.cases"
           :key="caseName"
           class="case-card"
@@ -93,7 +106,7 @@
           </div>
           <p class="case-description">{{ caseInfo.description }}</p>
           <div class="case-examples">
-            <div 
+            <div
               v-for="example in caseInfo.examples.slice(0, 1)"
               :key="example"
               class="case-example"
@@ -111,9 +124,7 @@
         <p class="cta-text">
           Rejoignez des milliers d'apprenants qui maîtrisent déjà les cas russes
         </p>
-        <router-link to="/learn" class="cta-button large">
-          Commencer maintenant
-        </router-link>
+        <router-link to="/learn" class="cta-button large"> Commencer maintenant </router-link>
       </div>
     </div>
   </div>
@@ -130,7 +141,7 @@ const previewCards = computed(() => [
   { text: 'Я читаю', case: 'Nominatif', color: '#4F46E5' },
   { text: 'книгу', case: 'Accusatif', color: '#D97706' },
   { text: 'студенту', case: 'Datif', color: '#059669' },
-  { text: 'о работе', case: 'Prépositionnel', color: '#BE185D' }
+  { text: 'о работе', case: 'Prépositionnel', color: '#BE185D' },
 ])
 </script>
 
@@ -251,14 +262,31 @@ const previewCards = computed(() => [
   border-left: 4px solid var(--color);
 }
 
-.preview-card:nth-child(1) { top: 10%; left: 20%; }
-.preview-card:nth-child(2) { top: 30%; right: 10%; }
-.preview-card:nth-child(3) { bottom: 30%; left: 10%; }
-.preview-card:nth-child(4) { bottom: 10%; right: 20%; }
+.preview-card:nth-child(1) {
+  top: 10%;
+  left: 20%;
+}
+.preview-card:nth-child(2) {
+  top: 30%;
+  right: 10%;
+}
+.preview-card:nth-child(3) {
+  bottom: 30%;
+  left: 10%;
+}
+.preview-card:nth-child(4) {
+  bottom: 10%;
+  right: 20%;
+}
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(2deg); }
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+  }
 }
 
 .card-text {
@@ -283,7 +311,8 @@ const previewCards = computed(() => [
   margin: 0 auto;
 }
 
-.features-section, .cases-preview {
+.features-section,
+.cases-preview {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -405,28 +434,29 @@ const previewCards = computed(() => [
     text-align: center;
     padding: 2rem 1rem;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-actions {
     justify-content: center;
   }
-  
+
   .cta-button {
     padding: 0.75rem 1.5rem;
     font-size: 0.875rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
-  .features-grid, .cases-grid {
+
+  .features-grid,
+  .cases-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .cta-title {
     font-size: 2rem;
   }

@@ -9,7 +9,7 @@ export const useUserStore = defineStore('user', () => {
     completedSentences: [],
     completedQuizzes: [],
     streak: 0,
-    lastActivity: new Date().toISOString()
+    lastActivity: new Date().toISOString(),
   })
 
   const pointsToNextLevel = computed(() => {
@@ -54,15 +54,15 @@ export const useUserStore = defineStore('user', () => {
   function updateStreak() {
     const today = new Date().toDateString()
     const lastActivity = new Date(progress.value.lastActivity).toDateString()
-    
+
     if (today === lastActivity) {
       // Same day, no change to streak
       return
     }
-    
+
     const yesterday = new Date()
     yesterday.setDate(yesterday.getDate() - 1)
-    
+
     if (lastActivity === yesterday.toDateString()) {
       // Consecutive day
       progress.value.streak += 1
@@ -70,7 +70,7 @@ export const useUserStore = defineStore('user', () => {
       // Streak broken
       progress.value.streak = 1
     }
-    
+
     updateActivity()
   }
 
@@ -85,7 +85,7 @@ export const useUserStore = defineStore('user', () => {
       completedSentences: [],
       completedQuizzes: [],
       streak: 0,
-      lastActivity: new Date().toISOString()
+      lastActivity: new Date().toISOString(),
     }
   }
 
@@ -96,6 +96,6 @@ export const useUserStore = defineStore('user', () => {
     addPoints,
     completeSentence,
     completeQuiz,
-    resetProgress
+    resetProgress,
   }
 })

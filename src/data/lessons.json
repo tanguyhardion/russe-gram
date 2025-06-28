@@ -231,7 +231,10 @@
       "name": "Prépositionnel",
       "description": "Cas utilisé uniquement après certaines prépositions",
       "color": "#BE185D",
-      "examples": ["Думаю о работе (Je pense au travail)", "Книга на столе (Le livre est sur la table)"]
+      "examples": [
+        "Думаю о работе (Je pense au travail)",
+        "Книга на столе (Le livre est sur la table)"
+      ]
     }
   },
   "quizzes": [

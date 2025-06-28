@@ -6,14 +6,14 @@ import lessonsData from '@/data/lessons.json'
 export const useQuizStore = defineStore('quiz', () => {
   // Quiz data
   const quizzes = ref<Quiz[]>((lessonsData as any).quizzes)
-  
+
   // Quiz state
   const quizState = ref<QuizState>({
     currentQuiz: null,
     score: 0,
     answered: false,
     selectedAnswer: null,
-    showExplanation: false
+    showExplanation: false,
   })
 
   // Current quiz session
@@ -37,11 +37,11 @@ export const useQuizStore = defineStore('quiz', () => {
     // Shuffle and select random quizzes
     const shuffled = [...quizzes.value].sort(() => Math.random() - 0.5)
     quizSession.value = shuffled.slice(0, Math.min(numberOfQuestions, shuffled.length))
-    
+
     currentQuizIndex.value = 0
     sessionScore.value = 0
     sessionTotal.value = quizSession.value.length
-    
+
     if (quizSession.value.length > 0) {
       loadCurrentQuiz()
     }
@@ -54,7 +54,7 @@ export const useQuizStore = defineStore('quiz', () => {
         score: sessionScore.value,
         answered: false,
         selectedAnswer: null,
-        showExplanation: false
+        showExplanation: false,
       }
     } else {
       // Quiz session completed
@@ -64,16 +64,16 @@ export const useQuizStore = defineStore('quiz', () => {
 
   function selectAnswer(answer: string) {
     if (quizState.value.answered) return
-    
+
     quizState.value.selectedAnswer = answer
     quizState.value.answered = true
-    
+
     // Check if answer is correct
     const isCorrect = answer === quizState.value.currentQuiz?.correct
     if (isCorrect) {
       sessionScore.value += 1
     }
-    
+
     // Show explanation after a short delay
     setTimeout(() => {
       quizState.value.showExplanation = true
@@ -86,7 +86,7 @@ export const useQuizStore = defineStore('quiz', () => {
   }
 
   function getQuizById(id: number): Quiz | undefined {
-    return quizzes.value.find(quiz => quiz.id === id)
+    return quizzes.value.find((quiz) => quiz.id === id)
   }
 
   function isCorrectAnswer(): boolean {
@@ -102,7 +102,7 @@ export const useQuizStore = defineStore('quiz', () => {
       score: 0,
       answered: false,
       selectedAnswer: null,
-      showExplanation: false
+      showExplanation: false,
     }
     currentQuizIndex.value = 0
     quizSession.value = []
@@ -114,7 +114,8 @@ export const useQuizStore = defineStore('quiz', () => {
     return {
       score: sessionScore.value,
       total: sessionTotal.value,
-      percentage: sessionTotal.value > 0 ? Math.round((sessionScore.value / sessionTotal.value) * 100) : 0
+      percentage:
+        sessionTotal.value > 0 ? Math.round((sessionScore.value / sessionTotal.value) * 100) : 0,
     }
   }
 
@@ -134,6 +135,6 @@ export const useQuizStore = defineStore('quiz', () => {
     getQuizById,
     isCorrectAnswer,
     resetQuiz,
-    getSessionResults
+    getSessionResults,
   }
 })

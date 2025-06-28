@@ -3,9 +3,7 @@
     <div class="quiz-container">
       <div class="quiz-header">
         <h1 class="quiz-title">Mode Quiz</h1>
-        <p class="quiz-subtitle">
-          Testez vos connaissances des cas russes
-        </p>
+        <p class="quiz-subtitle">Testez vos connaissances des cas russes</p>
         <div class="points-mini">
           <span class="points-value">{{ userStore.progress.points }} points</span>
           <span class="level-badge">Niveau {{ userStore.progress.level }}</span>
@@ -21,7 +19,7 @@
             Vous allez répondre à {{ numberOfQuestions }} questions sur les cas grammaticaux russes.
             Chaque bonne réponse vous rapporte 20 points !
           </p>
-          
+
           <div class="difficulty-selector">
             <h3>Nombre de questions :</h3>
             <div class="difficulty-options">
@@ -36,10 +34,15 @@
               </button>
             </div>
           </div>
-          
+
           <button class="start-button" @click="startQuiz">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9c.96 0 1.88-.16 2.73-.45l3.77 1.26-1.26-3.77c.29-.85.45-1.77.45-2.73 0-4.97-4.03-9-9-9z"/>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9c.96 0 1.88-.16 2.73-.45l3.77 1.26-1.26-3.77c.29-.85.45-1.77.45-2.73 0-4.97-4.03-9-9-9z"
+              />
             </svg>
             Commencer le quiz
           </button>
@@ -67,9 +70,9 @@
           <div class="results-icon">
             {{ results.percentage >= 80 ? '🏆' : results.percentage >= 60 ? '🎉' : '📚' }}
           </div>
-          
+
           <h2 class="results-title">Quiz terminé !</h2>
-          
+
           <div class="score-display">
             <div class="score-main">
               <span class="score-value">{{ results.score }}</span>
@@ -78,38 +81,55 @@
             </div>
             <div class="score-percentage">{{ results.percentage }}%</div>
           </div>
-          
+
           <div class="performance-message">
             <p>{{ getPerformanceMessage() }}</p>
           </div>
-          
+
           <div class="points-earned">
             <div class="points-display">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
               </svg>
               <span>+{{ pointsEarned }} points gagnés !</span>
             </div>
           </div>
-          
+
           <div class="results-actions">
             <button class="results-button primary" @click="restartQuiz">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                />
               </svg>
               Refaire un quiz
             </button>
-            
+
             <router-link to="/learn" class="results-button secondary">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                />
               </svg>
               Continuer l'apprentissage
             </router-link>
-            
+
             <router-link to="/" class="results-button accent">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                />
               </svg>
               Retour à l'accueil
             </router-link>
@@ -137,7 +157,7 @@ const pointsEarned = ref(0)
 const questionOptions = [
   { label: '5 questions', value: 5 },
   { label: '10 questions', value: 10 },
-  { label: '15 questions', value: 15 }
+  { label: '15 questions', value: 15 },
 ]
 
 const currentQuiz = computed(() => quizStore.currentQuiz)
@@ -162,7 +182,7 @@ function handleNext() {
     pointsEarned.value += points
     userStore.completeQuiz(currentQuiz.value.id, isCorrect)
   }
-  
+
   // Move to next question or complete quiz
   if (quizStore.currentQuizIndex + 1 >= quizStore.sessionTotal) {
     completeQuiz()
@@ -184,17 +204,17 @@ function restartQuiz() {
 
 function getPerformanceMessage(): string {
   const percentage = results.value.percentage
-  
+
   if (percentage >= 90) {
-    return "Excellent ! Vous maîtrisez parfaitement les cas russes !"
+    return 'Excellent ! Vous maîtrisez parfaitement les cas russes !'
   } else if (percentage >= 80) {
-    return "Très bien ! Vous avez une bonne compréhension des cas russes."
+    return 'Très bien ! Vous avez une bonne compréhension des cas russes.'
   } else if (percentage >= 70) {
-    return "Bien joué ! Continuez à vous entraîner pour progresser."
+    return 'Bien joué ! Continuez à vous entraîner pour progresser.'
   } else if (percentage >= 60) {
-    return "Pas mal ! Quelques révisions vous aideront à améliorer vos résultats."
+    return 'Pas mal ! Quelques révisions vous aideront à améliorer vos résultats.'
   } else {
-    return "Ne vous découragez pas ! Relisez les leçons et réessayez."
+    return 'Ne vous découragez pas ! Relisez les leçons et réessayez.'
   }
 }
 
@@ -502,32 +522,33 @@ onMounted(() => {
   .quiz-container {
     padding: 1rem;
   }
-  
+
   .quiz-title {
     font-size: 2rem;
   }
-  
-  .start-card, .results-card {
+
+  .start-card,
+  .results-card {
     padding: 2rem;
   }
-  
+
   .difficulty-options {
     flex-direction: column;
   }
-  
+
   .difficulty-button {
     width: 100%;
   }
-  
+
   .results-button {
     width: 100%;
     max-width: 300px;
   }
-  
+
   .score-value {
     font-size: 3rem;
   }
-  
+
   .points-mini {
     flex-direction: column;
     gap: 0.5rem;

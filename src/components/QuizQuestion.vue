@@ -3,14 +3,9 @@
     <div class="quiz-header">
       <div class="quiz-progress">
         <div class="progress-bar">
-          <div 
-            class="progress-fill"
-            :style="{ width: `${progress}%` }"
-          ></div>
+          <div class="progress-fill" :style="{ width: `${progress}%` }"></div>
         </div>
-        <span class="progress-text">
-          Question {{ currentIndex + 1 }} sur {{ total }}
-        </span>
+        <span class="progress-text"> Question {{ currentIndex + 1 }} sur {{ total }} </span>
       </div>
       <div class="quiz-score">
         <span class="score-text">Score: {{ score }}/{{ total }}</span>
@@ -25,9 +20,9 @@
       </div>
 
       <div class="highlighted-word">
-        <span 
+        <span
           class="word-highlight"
-          :style="{ backgroundColor: getCaseColor(targetWord?.case) }"
+          :style="{ backgroundColor: getCaseColor(targetWord?.case || null) }"
         >
           {{ targetWord?.russian }}
         </span>
@@ -44,10 +39,10 @@
         :key="option.case"
         class="option-button"
         :class="{
-          'selected': selectedAnswer === option.case,
-          'correct': isAnswered && option.case === quiz.correct,
-          'incorrect': isAnswered && selectedAnswer === option.case && option.case !== quiz.correct,
-          'disabled': isAnswered
+          selected: selectedAnswer === option.case,
+          correct: isAnswered && option.case === quiz.correct,
+          incorrect: isAnswered && selectedAnswer === option.case && option.case !== quiz.correct,
+          disabled: isAnswered,
         }"
         :disabled="isAnswered"
         @click="selectAnswer(option.case)"
@@ -56,12 +51,23 @@
           <span class="option-label">{{ option.label }}</span>
           <div v-if="isAnswered && option.case === quiz.correct" class="check-icon">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
             </svg>
           </div>
-          <div v-else-if="isAnswered && selectedAnswer === option.case && option.case !== quiz.correct" class="x-icon">
+          <div
+            v-else-if="isAnswered && selectedAnswer === option.case && option.case !== quiz.correct"
+            class="x-icon"
+          >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
             </svg>
           </div>
         </div>
@@ -78,11 +84,7 @@
     </div>
 
     <div class="quiz-actions">
-      <button
-        v-if="showExplanation"
-        class="next-button"
-        @click="$emit('next')"
-      >
+      <button v-if="showExplanation" class="next-button" @click="$emit('next')">
         Question suivante
       </button>
     </div>
@@ -373,30 +375,30 @@ function getCaseColor(caseName: string | null): string {
   .quiz-question {
     padding: 1.5rem;
   }
-  
+
   .quiz-header {
     flex-direction: column;
     align-items: stretch;
     gap: 1rem;
   }
-  
+
   .quiz-progress {
     margin-right: 0;
   }
-  
+
   .russian-sentence {
     font-size: 1.25rem;
   }
-  
+
   .word-highlight {
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
   }
-  
+
   .question-text h2 {
     font-size: 1.25rem;
   }
-  
+
   .option-button {
     padding: 0.75rem 1rem;
     font-size: 1rem;
