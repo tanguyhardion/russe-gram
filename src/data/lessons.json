@@ -1,0 +1,309 @@
+{
+  "sentences": [
+    {
+      "id": 1,
+      "russian": "Я читаю книгу",
+      "french": "Je lis un livre",
+      "words": [
+        {
+          "id": 1,
+          "russian": "Я",
+          "french": "Je",
+          "case": "nominative",
+          "explanation": "Pronom personnel à la 1ère personne du singulier au cas nominatif. Le nominatif est utilisé pour le sujet de la phrase.",
+          "position": 0
+        },
+        {
+          "id": 2,
+          "russian": "читаю",
+          "french": "lis",
+          "case": null,
+          "explanation": "Verbe 'lire' conjugué à la 1ère personne du singulier au présent.",
+          "position": 1
+        },
+        {
+          "id": 3,
+          "russian": "книгу",
+          "french": "livre",
+          "case": "accusative",
+          "explanation": "Nom féminin 'livre' au cas accusatif. L'accusatif est utilisé pour l'objet direct d'un verbe transitif.",
+          "position": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "russian": "Студент идёт в университет",
+      "french": "L'étudiant va à l'université",
+      "words": [
+        {
+          "id": 4,
+          "russian": "Студент",
+          "french": "L'étudiant",
+          "case": "nominative",
+          "explanation": "Nom masculin au cas nominatif. Le sujet de la phrase est toujours au nominatif.",
+          "position": 0
+        },
+        {
+          "id": 5,
+          "russian": "идёт",
+          "french": "va",
+          "case": null,
+          "explanation": "Verbe 'aller' conjugué à la 3ème personne du singulier au présent.",
+          "position": 1
+        },
+        {
+          "id": 6,
+          "russian": "в",
+          "french": "dans/à",
+          "case": null,
+          "explanation": "Préposition qui demande l'accusatif pour indiquer la direction.",
+          "position": 2
+        },
+        {
+          "id": 7,
+          "russian": "университет",
+          "french": "université",
+          "case": "accusative",
+          "explanation": "Nom masculin au cas accusatif après la préposition 'в' indiquant la direction.",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "russian": "Девочка даёт хлеб собаке",
+      "french": "La fille donne du pain au chien",
+      "words": [
+        {
+          "id": 8,
+          "russian": "Девочка",
+          "french": "La fille",
+          "case": "nominative",
+          "explanation": "Nom féminin au cas nominatif. C'est le sujet qui effectue l'action.",
+          "position": 0
+        },
+        {
+          "id": 9,
+          "russian": "даёт",
+          "french": "donne",
+          "case": null,
+          "explanation": "Verbe 'donner' conjugué à la 3ème personne du singulier au présent.",
+          "position": 1
+        },
+        {
+          "id": 10,
+          "russian": "хлеб",
+          "french": "pain",
+          "case": "accusative",
+          "explanation": "Nom masculin au cas accusatif. C'est l'objet direct qui est donné.",
+          "position": 2
+        },
+        {
+          "id": 11,
+          "russian": "собаке",
+          "french": "au chien",
+          "case": "dative",
+          "explanation": "Nom féminin au cas datif. Le datif indique le destinataire de l'action (à qui on donne).",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "russian": "Мы говорим о работе",
+      "french": "Nous parlons du travail",
+      "words": [
+        {
+          "id": 12,
+          "russian": "Мы",
+          "french": "Nous",
+          "case": "nominative",
+          "explanation": "Pronom personnel à la 1ère personne du pluriel au cas nominatif.",
+          "position": 0
+        },
+        {
+          "id": 13,
+          "russian": "говорим",
+          "french": "parlons",
+          "case": null,
+          "explanation": "Verbe 'parler' conjugué à la 1ère personne du pluriel au présent.",
+          "position": 1
+        },
+        {
+          "id": 14,
+          "russian": "о",
+          "french": "de/au sujet de",
+          "case": null,
+          "explanation": "Préposition qui demande toujours le cas prépositionnel.",
+          "position": 2
+        },
+        {
+          "id": 15,
+          "russian": "работе",
+          "french": "travail",
+          "case": "prepositional",
+          "explanation": "Nom féminin au cas prépositionnel après la préposition 'о'. Le prépositionnel s'utilise après certaines prépositions.",
+          "position": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "russian": "У меня есть новая машина",
+      "french": "J'ai une nouvelle voiture",
+      "words": [
+        {
+          "id": 16,
+          "russian": "У",
+          "french": "chez/à",
+          "case": null,
+          "explanation": "Préposition qui demande le génitif pour exprimer la possession.",
+          "position": 0
+        },
+        {
+          "id": 17,
+          "russian": "меня",
+          "french": "moi",
+          "case": "genitive",
+          "explanation": "Pronom personnel à la 1ère personne du singulier au cas génitif après la préposition 'у'.",
+          "position": 1
+        },
+        {
+          "id": 18,
+          "russian": "есть",
+          "french": "il y a",
+          "case": null,
+          "explanation": "Verbe d'existence, invariable.",
+          "position": 2
+        },
+        {
+          "id": 19,
+          "russian": "новая",
+          "french": "nouvelle",
+          "case": "nominative",
+          "explanation": "Adjectif féminin au cas nominatif, s'accordant avec 'машина'.",
+          "position": 3
+        },
+        {
+          "id": 20,
+          "russian": "машина",
+          "french": "voiture",
+          "case": "nominative",
+          "explanation": "Nom féminin au cas nominatif. Dans les constructions avec 'есть', l'objet possédé reste au nominatif.",
+          "position": 4
+        }
+      ]
+    }
+  ],
+  "cases": {
+    "nominative": {
+      "name": "Nominatif",
+      "description": "Cas du sujet de la phrase",
+      "color": "#4F46E5",
+      "examples": ["Кот спит (Le chat dort)", "Студент читает (L'étudiant lit)"]
+    },
+    "genitive": {
+      "name": "Génitif",
+      "description": "Cas de la possession, de la négation, après certaines prépositions",
+      "color": "#DC2626",
+      "examples": ["У меня (J'ai - littéralement: chez moi)", "Дом отца (La maison du père)"]
+    },
+    "dative": {
+      "name": "Datif",
+      "description": "Cas de l'objet indirect, du destinataire",
+      "color": "#059669",
+      "examples": ["Даю собаке (Je donne au chien)", "Иду к врачу (Je vais chez le médecin)"]
+    },
+    "accusative": {
+      "name": "Accusatif",
+      "description": "Cas de l'objet direct, de la direction",
+      "color": "#D97706",
+      "examples": ["Читаю книгу (Je lis un livre)", "Иду в школу (Je vais à l'école)"]
+    },
+    "instrumental": {
+      "name": "Instrumental",
+      "description": "Cas de l'instrument, du moyen, de l'accompagnement",
+      "color": "#7C3AED",
+      "examples": ["Пишу ручкой (J'écris avec un stylo)", "Иду с другом (Je vais avec un ami)"]
+    },
+    "prepositional": {
+      "name": "Prépositionnel",
+      "description": "Cas utilisé uniquement après certaines prépositions",
+      "color": "#BE185D",
+      "examples": ["Думаю о работе (Je pense au travail)", "Книга на столе (Le livre est sur la table)"]
+    }
+  },
+  "quizzes": [
+    {
+      "id": 1,
+      "sentenceId": 1,
+      "wordId": 3,
+      "question": "Quel est le cas du mot 'книгу' dans cette phrase ?",
+      "options": [
+        { "case": "nominative", "label": "Nominatif" },
+        { "case": "accusative", "label": "Accusatif" },
+        { "case": "genitive", "label": "Génitif" },
+        { "case": "dative", "label": "Datif" }
+      ],
+      "correct": "accusative",
+      "explanation": "'Книгу' est à l'accusatif car c'est l'objet direct du verbe 'читаю' (je lis)."
+    },
+    {
+      "id": 2,
+      "sentenceId": 2,
+      "wordId": 4,
+      "question": "Pourquoi 'Студент' est-il au nominatif ?",
+      "options": [
+        { "case": "nominative", "label": "C'est le sujet de la phrase" },
+        { "case": "accusative", "label": "C'est l'objet direct" },
+        { "case": "genitive", "label": "Il exprime la possession" },
+        { "case": "dative", "label": "C'est le destinataire" }
+      ],
+      "correct": "nominative",
+      "explanation": "'Студент' est le sujet qui effectue l'action, donc il est au nominatif."
+    },
+    {
+      "id": 3,
+      "sentenceId": 3,
+      "wordId": 11,
+      "question": "Quel est le cas du mot 'собаке' ?",
+      "options": [
+        { "case": "nominative", "label": "Nominatif" },
+        { "case": "accusative", "label": "Accusatif" },
+        { "case": "dative", "label": "Datif" },
+        { "case": "genitive", "label": "Génitif" }
+      ],
+      "correct": "dative",
+      "explanation": "'Собаке' est au datif car c'est le destinataire de l'action (à qui on donne le pain)."
+    },
+    {
+      "id": 4,
+      "sentenceId": 4,
+      "wordId": 15,
+      "question": "Pourquoi 'работе' est-il au prépositionnel ?",
+      "options": [
+        { "case": "prepositional", "label": "Après la préposition 'о'" },
+        { "case": "accusative", "label": "C'est l'objet direct" },
+        { "case": "genitive", "label": "Il exprime la possession" },
+        { "case": "dative", "label": "C'est le destinataire" }
+      ],
+      "correct": "prepositional",
+      "explanation": "'Работе' est au prépositionnel car il suit la préposition 'о' qui demande toujours ce cas."
+    },
+    {
+      "id": 5,
+      "sentenceId": 5,
+      "wordId": 17,
+      "question": "Quel est le cas du pronom 'меня' ?",
+      "options": [
+        { "case": "nominative", "label": "Nominatif" },
+        { "case": "genitive", "label": "Génitif" },
+        { "case": "dative", "label": "Datif" },
+        { "case": "accusative", "label": "Accusatif" }
+      ],
+      "correct": "genitive",
+      "explanation": "'Меня' est au génitif après la préposition 'у' qui exprime la possession."
+    }
+  ]
+}
