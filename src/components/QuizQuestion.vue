@@ -106,7 +106,7 @@ interface Props {
   showExplanation: boolean
 }
 
-defineEmits<{
+const emit = defineEmits<{
   selectAnswer: [answer: string]
   next: []
 }>()
@@ -137,6 +137,7 @@ function selectAnswer(answer: string) {
     setTimeout(() => {
       lessonStore.hideTooltip() // Hide any open tooltips
     }, 100)
+    emit('selectAnswer', answer)
   }
 }
 
