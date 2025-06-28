@@ -4,7 +4,7 @@
       <nav class="navbar">
         <div class="nav-container">
           <router-link to="/" class="nav-logo">
-            <div class="logo-icon">🇷🇺</div>
+            <img src="/russegram-logo.svg" alt="RusseGram Logo" class="logo-icon" style="width:2rem;height:2rem;vertical-align:middle;" />
             <span class="logo-text">RusseGram</span>
           </router-link>
 
