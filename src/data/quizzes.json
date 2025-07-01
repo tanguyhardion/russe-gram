@@ -418,5 +418,75 @@
     ],
     "correct": "instrumental",
     "explanation": "'Музыкой' est à l'instrumental car il suit le verbe 'интересоваться' qui demande ce cas."
+  },
+  {
+    "id": 31,
+    "sentenceId": 9,
+    "wordId": 32,
+    "question": "Quel est l'aspect du verbe 'лежит' ?",
+    "options": [
+      { "case": null, "label": "Imperfectif (action durative)" },
+      { "case": null, "label": "Perfectif (action accomplie)" },
+      { "case": null, "label": "Aspect mixte" },
+      { "case": null, "label": "Sans aspect défini" }
+    ],
+    "correct": null,
+    "explanation": "'Лежать' est un verbe imperfectif qui exprime un état durable, une position qui se maintient dans le temps."
+  },
+  {
+    "id": 32,
+    "sentenceId": 2,
+    "wordId": 4,
+    "question": "Comment 'студент' changerait-il au génitif ?",
+    "options": [
+      { "case": "genitive", "label": "студента" },
+      { "case": "genitive", "label": "студенту" },
+      { "case": "genitive", "label": "студентом" },
+      { "case": "genitive", "label": "студенте" }
+    ],
+    "correct": "genitive",
+    "explanation": "Le génitif de 'студент' est 'студента' (terminaison -а pour les masculins animés)."
+  },
+  {
+    "id": 33,
+    "sentenceId": 3,
+    "wordId": 8,
+    "question": "Pourquoi 'девочка' ne change-t-elle pas à l'accusatif ?",
+    "options": [
+      { "case": "nominative", "label": "Elle est au nominatif (sujet)" },
+      { "case": "accusative", "label": "Les féminins ne changent pas" },
+      { "case": "genitive", "label": "C'est un cas spécial" },
+      { "case": "dative", "label": "Elle est au datif" }
+    ],
+    "correct": "nominative",
+    "explanation": "'Девочка' est au nominatif car c'est le sujet de la phrase qui effectue l'action."
+  },
+  {
+    "id": 34,
+    "sentenceId": 1,
+    "wordId": 3,
+    "question": "Comment le genre affecte-t-il la déclinaison de 'книгу' ?",
+    "options": [
+      { "case": "accusative", "label": "Féminin : terminaison -у à l'accusatif" },
+      { "case": "accusative", "label": "Masculin : pas de terminaison" },
+      { "case": "accusative", "label": "Neutre : terminaison -о" },
+      { "case": "accusative", "label": "Le genre n'affecte pas l'accusatif" }
+    ],
+    "correct": "accusative",
+    "explanation": "Les noms féminins en -а/-я prennent la terminaison -у/-ю à l'accusatif, comme 'книга' → 'книгу'."
+  },
+  {
+    "id": 35,
+    "sentenceId": 4,
+    "wordId": 12,
+    "question": "Comment 'мы' se décline-t-il aux autres cas ?",
+    "options": [
+      { "case": "genitive", "label": "Gén: нас, Dat: нам, Acc: нас, Instr: нами" },
+      { "case": "accusative", "label": "Tous les cas identiques" },
+      { "case": "dative", "label": "Déclinaison comme les noms" },
+      { "case": "instrumental", "label": "Forme invariable" }
+    ],
+    "correct": "genitive",
+    "explanation": "Le pronom 'мы' se décline : nominatif мы, génitif/accusatif нас, datif нам, instrumental нами, prépositionnel нас."
   }
 ]
