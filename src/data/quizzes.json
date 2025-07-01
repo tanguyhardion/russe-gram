@@ -325,7 +325,7 @@
     "id": 24,
     "sentenceId": 9,
     "wordId": 33,
-    "question": "Pourquoi la préposition 'na' demande-t-elle le prépositionnel dans cette phrase ?",
+    "question": "Pourquoi la préposition 'на' demande-t-elle le prépositionnel dans cette phrase ?",
     "options": [
       { "case": "prepositional", "label": "Pour indiquer l'emplacement" },
       { "case": "accusative", "label": "Pour indiquer la direction" },
@@ -333,7 +333,7 @@
       { "case": "dative", "label": "Pour indiquer le destinataire" }
     ],
     "correct": "prepositional",
-    "explanation": "La préposition 'na' demande le prépositionnel pour indiquer l'emplacement."
+    "explanation": "La préposition 'на' demande le prépositionnel pour indiquer l'emplacement."
   },
   {
     "id": 25,
