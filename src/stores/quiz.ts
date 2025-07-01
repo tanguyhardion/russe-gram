@@ -1,11 +1,11 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import type { Quiz, QuizState } from '@/types'
-import lessonsData from '@/data/lessons.json'
+import quizzesData from '@/data/quizzes.json'
 
 export const useQuizStore = defineStore('quiz', () => {
   // Quiz data
-  const quizzes = ref<Quiz[]>((lessonsData as any).quizzes)
+  const quizzes = ref<Quiz[]>(quizzesData as Quiz[])
 
   // Quiz state
   const quizState = ref<QuizState>({

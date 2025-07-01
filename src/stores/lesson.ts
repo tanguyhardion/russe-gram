@@ -1,11 +1,16 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import type { LessonData, Sentence, Word, AppState } from '@/types'
-import lessonsData from '@/data/lessons.json'
+import sentences from '@/data/sentences.json'
+import cases from '@/data/cases.json'
 
 export const useLessonStore = defineStore('lesson', () => {
   // Load lesson data
-  const data = ref<LessonData>(lessonsData as LessonData)
+  const data = ref<LessonData>({
+    sentences: sentences as any,
+    cases: cases as any,
+    quizzes: [], // quizzes are not used in lesson store
+  })
 
   // Application state
   const appState = ref<AppState>({
@@ -16,8 +21,8 @@ export const useLessonStore = defineStore('lesson', () => {
   })
 
   // Computed getters
-  const sentences = computed(() => data.value.sentences)
-  const cases = computed(() => data.value.cases)
+  const sentencesList = computed(() => data.value.sentences)
+  const casesList = computed(() => data.value.cases)
   const currentSentence = computed(() => appState.value.currentSentence)
   const selectedWord = computed(() => appState.value.selectedWord)
   const showTooltip = computed(() => appState.value.showTooltip)
@@ -63,8 +68,8 @@ export const useLessonStore = defineStore('lesson', () => {
 
   return {
     data,
-    sentences,
-    cases,
+    sentences: sentencesList,
+    cases: casesList,
     currentSentence,
     selectedWord,
     showTooltip,

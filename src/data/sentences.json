@@ -1,0 +1,337 @@
+[
+  {
+    "id": 1,
+    "russian": "Я читаю книгу",
+    "french": "Je lis un livre",
+    "words": [
+      {
+        "id": 1,
+        "russian": "Я",
+        "french": "Je",
+        "case": "nominative",
+        "explanation": "Pronom personnel à la 1ère personne du singulier au cas nominatif. Le nominatif est utilisé pour le sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 2,
+        "russian": "читаю",
+        "french": "lis",
+        "case": null,
+        "explanation": "Verbe 'lire' conjugué à la 1ère personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 3,
+        "russian": "книгу",
+        "french": "livre",
+        "case": "accusative",
+        "explanation": "Nom féminin 'livre' au cas accusatif. L'accusatif est utilisé pour l'objet direct d'un verbe transitif.",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "russian": "Студент идёт в университет",
+    "french": "L'étudiant va à l'université",
+    "words": [
+      {
+        "id": 4,
+        "russian": "Студент",
+        "french": "L'étudiant",
+        "case": "nominative",
+        "explanation": "Nom masculin au cas nominatif. Le sujet de la phrase est toujours au nominatif.",
+        "position": 0
+      },
+      {
+        "id": 5,
+        "russian": "идёт",
+        "french": "va",
+        "case": null,
+        "explanation": "Verbe 'aller' conjugué à la 3ème personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 6,
+        "russian": "в",
+        "french": "dans/à",
+        "case": null,
+        "explanation": "Préposition qui demande l'accusatif pour indiquer la direction.",
+        "position": 2
+      },
+      {
+        "id": 7,
+        "russian": "университет",
+        "french": "université",
+        "case": "accusative",
+        "explanation": "Nom masculin au cas accusatif après la préposition 'в' indiquant la direction.",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "russian": "Девочка даёт хлеб собаке",
+    "french": "La fille donne du pain au chien",
+    "words": [
+      {
+        "id": 8,
+        "russian": "Девочка",
+        "french": "La fille",
+        "case": "nominative",
+        "explanation": "Nom féminin au cas nominatif. C'est le sujet qui effectue l'action.",
+        "position": 0
+      },
+      {
+        "id": 9,
+        "russian": "даёт",
+        "french": "donne",
+        "case": null,
+        "explanation": "Verbe 'donner' conjugué à la 3ème personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 10,
+        "russian": "хлеб",
+        "french": "pain",
+        "case": "accusative",
+        "explanation": "Nom masculin au cas accusatif. C'est l'objet direct qui est donné.",
+        "position": 2
+      },
+      {
+        "id": 11,
+        "russian": "собаке",
+        "french": "au chien",
+        "case": "dative",
+        "explanation": "Nom féminin au cas datif. Le datif indique le destinataire de l'action (à qui on donne).",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "russian": "Мы говорим о работе",
+    "french": "Nous parlons du travail",
+    "words": [
+      {
+        "id": 12,
+        "russian": "Мы",
+        "french": "Nous",
+        "case": "nominative",
+        "explanation": "Pronom personnel à la 1ère personne du pluriel au cas nominatif.",
+        "position": 0
+      },
+      {
+        "id": 13,
+        "russian": "говорим",
+        "french": "parlons",
+        "case": null,
+        "explanation": "Verbe 'parler' conjugué à la 1ère personne du pluriel au présent.",
+        "position": 1
+      },
+      {
+        "id": 14,
+        "russian": "о",
+        "french": "de/au sujet de",
+        "case": null,
+        "explanation": "Préposition qui demande toujours le cas prépositionnel.",
+        "position": 2
+      },
+      {
+        "id": 15,
+        "russian": "работе",
+        "french": "travail",
+        "case": "prepositional",
+        "explanation": "Nom féminin au cas prépositionnel après la préposition 'о'. Le prépositionnel s'utilise après certaines prépositions.",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "russian": "У меня есть новая машина",
+    "french": "J'ai une nouvelle voiture",
+    "words": [
+      {
+        "id": 16,
+        "russian": "У",
+        "french": "chez/à",
+        "case": null,
+        "explanation": "Préposition qui demande le génitif pour exprimer la possession.",
+        "position": 0
+      },
+      {
+        "id": 17,
+        "russian": "меня",
+        "french": "moi",
+        "case": "genitive",
+        "explanation": "Pronom personnel à la 1ère personne du singulier au cas génitif après la préposition 'у'.",
+        "position": 1
+      },
+      {
+        "id": 18,
+        "russian": "есть",
+        "french": "il y a",
+        "case": null,
+        "explanation": "Verbe d'existence, invariable.",
+        "position": 2
+      },
+      {
+        "id": 19,
+        "russian": "новая",
+        "french": "nouvelle",
+        "case": "nominative",
+        "explanation": "Adjectif féminin au cas nominatif, s'accordant avec 'машина'.",
+        "position": 3
+      },
+      {
+        "id": 20,
+        "russian": "машина",
+        "french": "voiture",
+        "case": "nominative",
+        "explanation": "Nom féminin au cas nominatif. Dans les constructions avec 'есть', l'objet possédé reste au nominatif.",
+        "position": 4
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "russian": "Мальчик пишет письмо другу",
+    "french": "Le garçon écrit une lettre à un ami",
+    "words": [
+      {
+        "id": 21,
+        "russian": "Мальчик",
+        "french": "Le garçon",
+        "case": "nominative",
+        "explanation": "Nom masculin au cas nominatif. C'est le sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 22,
+        "russian": "пишет",
+        "french": "écrit",
+        "case": null,
+        "explanation": "Verbe 'écrire' conjugué à la 3ème personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 23,
+        "russian": "письмо",
+        "french": "lettre",
+        "case": "accusative",
+        "explanation": "Nom neutre au cas accusatif. C'est l'objet direct de l'action.",
+        "position": 2
+      },
+      {
+        "id": 24,
+        "russian": "другу",
+        "french": "à un ami",
+        "case": "dative",
+        "explanation": "Nom masculin au cas datif. Le datif indique le destinataire de l'action (à qui on écrit).",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "russian": "Мама гордится сыном",
+    "french": "La mère est fière de son fils",
+    "words": [
+      {
+        "id": 25,
+        "russian": "Мама",
+        "french": "La mère",
+        "case": "nominative",
+        "explanation": "Nom féminin au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 26,
+        "russian": "гордится",
+        "french": "est fière",
+        "case": null,
+        "explanation": "Verbe 'être fier' conjugué à la 3ème personne du singulier au présent. Demande l'instrumental pour l'objet de la fierté.",
+        "position": 1
+      },
+      {
+        "id": 27,
+        "russian": "сыном",
+        "french": "de son fils",
+        "case": "instrumental",
+        "explanation": "Nom masculin au cas instrumental après le verbe 'гордиться' (être fier de). L'instrumental est utilisé ici pour indiquer l'objet de la fierté.",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "russian": "Я интересуюсь музыкой",
+    "french": "Je m'intéresse à la musique",
+    "words": [
+      {
+        "id": 28,
+        "russian": "Я",
+        "french": "Je",
+        "case": "nominative",
+        "explanation": "Pronom personnel à la 1ère personne du singulier au nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 29,
+        "russian": "интересуюсь",
+        "french": "m'intéresse",
+        "case": null,
+        "explanation": "Verbe 's'intéresser' conjugué à la 1ère personne du singulier. Demande l'instrumental pour l'objet de l'intérêt.",
+        "position": 1
+      },
+      {
+        "id": 30,
+        "russian": "музыкой",
+        "french": "à la musique",
+        "case": "instrumental",
+        "explanation": "Nom féminin au cas instrumental après le verbe 'интересоваться' (s'intéresser à). L'instrumental est utilisé ici pour indiquer l'objet de l'intérêt.",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "russian": "Книга лежит на столе",
+    "french": "Le livre est sur la table",
+    "words": [
+      {
+        "id": 31,
+        "russian": "Книга",
+        "french": "Le livre",
+        "case": "nominative",
+        "explanation": "Nom féminin au nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 32,
+        "russian": "лежит",
+        "french": "est (posé)",
+        "case": null,
+        "explanation": "Verbe 'être posé' conjugué à la 3ème personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 33,
+        "russian": "на",
+        "french": "sur",
+        "case": null,
+        "explanation": "Préposition qui demande le prépositionnel pour indiquer l'emplacement.",
+        "position": 2
+      },
+      {
+        "id": 34,
+        "russian": "столе",
+        "french": "la table",
+        "case": "prepositional",
+        "explanation": "Nom masculin au prépositionnel après la préposition 'на'. Le prépositionnel est utilisé ici pour indiquer l'emplacement.",
+        "position": 3
+      }
+    ]
+  }
+]

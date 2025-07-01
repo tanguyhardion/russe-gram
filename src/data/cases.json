@@ -1,0 +1,41 @@
+{
+  "nominative": {
+    "name": "Nominatif",
+    "description": "Cas du sujet de la phrase",
+    "color": "#4F46E5",
+    "examples": ["Кот спит (Le chat dort)", "Студент читает (L'étudiant lit)"]
+  },
+  "genitive": {
+    "name": "Génitif",
+    "description": "Cas de la possession, de la négation, après certaines prépositions",
+    "color": "#DC2626",
+    "examples": ["У меня (J'ai - littéralement: chez moi)", "Дом отца (La maison du père)"]
+  },
+  "dative": {
+    "name": "Datif",
+    "description": "Cas de l'objet indirect, du destinataire",
+    "color": "#059669",
+    "examples": ["Даю собаке (Je donne au chien)", "Иду к врачу (Je vais chez le médecin)"]
+  },
+  "accusative": {
+    "name": "Accusatif",
+    "description": "Cas de l'objet direct, de la direction",
+    "color": "#D97706",
+    "examples": ["Читаю книгу (Je lis un livre)", "Иду в школу (Je vais à l'école)"]
+  },
+  "instrumental": {
+    "name": "Instrumental",
+    "description": "Cas de l'instrument, du moyen, de l'accompagnement",
+    "color": "#7C3AED",
+    "examples": ["Пишу ручкой (J'écris avec un stylo)", "Иду с другом (Je vais avec un ami)"]
+  },
+  "prepositional": {
+    "name": "Prépositionnel",
+    "description": "Cas utilisé uniquement après certaines prépositions",
+    "color": "#BE185D",
+    "examples": [
+      "Думаю о работе (Je pense au travail)",
+      "Книга на столе (Le livre est sur la table)"
+    ]
+  }
+}
