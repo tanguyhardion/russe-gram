@@ -170,7 +170,7 @@ function startQuiz() {
   quizStore.startQuizSession(numberOfQuestions.value)
 }
 
-function handleAnswerSelect(answer: string) {
+function handleAnswerSelect(answer: number) {
   quizStore.selectAnswer(answer)
 }
 
