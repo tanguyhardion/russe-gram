@@ -35,21 +35,21 @@
 
     <div class="answer-options">
       <button
-        v-for="option in quiz.options"
-        :key="option.case"
+        v-for="(option, index) in quiz.options"
+        :key="index"
         class="option-button"
         :class="{
-          selected: selectedAnswer === option.case,
-          correct: isAnswered && option.case === quiz.correct,
-          incorrect: isAnswered && selectedAnswer === option.case && option.case !== quiz.correct,
+          selected: selectedAnswer === index,
+          correct: isAnswered && index === quiz.correct,
+          incorrect: isAnswered && selectedAnswer === index && index !== quiz.correct,
           disabled: isAnswered,
         }"
         :disabled="isAnswered"
-        @click="selectAnswer(option.case)"
+        @click="selectAnswer(index)"
       >
         <div class="option-content">
           <span class="option-label">{{ option.label }}</span>
-          <div v-if="isAnswered && option.case === quiz.correct" class="check-icon">
+          <div v-if="isAnswered && index === quiz.correct" class="check-icon">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path
                 fill-rule="evenodd"
@@ -59,7 +59,7 @@
             </svg>
           </div>
           <div
-            v-else-if="isAnswered && selectedAnswer === option.case && option.case !== quiz.correct"
+            v-else-if="isAnswered && selectedAnswer === index && index !== quiz.correct"
             class="x-icon"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -101,13 +101,13 @@ interface Props {
   currentIndex: number
   total: number
   score: number
-  selectedAnswer: string | null
+  selectedAnswer: number | null
   isAnswered: boolean
   showExplanation: boolean
 }
 
 const emit = defineEmits<{
-  selectAnswer: [answer: string]
+  selectAnswer: [answer: number]
   next: []
 }>()
 
@@ -131,7 +131,7 @@ const isCorrect = computed(() => {
   return props.selectedAnswer === props.quiz.correct
 })
 
-function selectAnswer(answer: string) {
+function selectAnswer(answer: number) {
   if (!props.isAnswered) {
     // Add a small delay for visual feedback
     setTimeout(() => {

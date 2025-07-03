@@ -333,5 +333,566 @@
         "position": 3
       }
     ]
+  },
+  {
+    "id": 10,
+    "russian": "Друзья играют в парке",
+    "french": "Les amis jouent dans le parc",
+    "words": [
+      {
+        "id": 35,
+        "russian": "Друзья",
+        "french": "Les amis",
+        "case": "nominative",
+        "explanation": "Nom masculin au pluriel au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 36,
+        "russian": "играют",
+        "french": "jouent",
+        "case": null,
+        "explanation": "Verbe 'jouer' conjugué à la 3ème personne du pluriel au présent.",
+        "position": 1
+      },
+      {
+        "id": 37,
+        "russian": "в",
+        "french": "dans",
+        "case": null,
+        "explanation": "Préposition qui demande le prépositionnel pour indiquer l'emplacement.",
+        "position": 2
+      },
+      {
+        "id": 38,
+        "russian": "парке",
+        "french": "le parc",
+        "case": "prepositional",
+        "explanation": "Nom masculin au prépositionnel après la préposition 'в' indiquant l'emplacement.",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "russian": "Она видит кота",
+    "french": "Elle voit le chat",
+    "words": [
+      {
+        "id": 39,
+        "russian": "Она",
+        "french": "Elle",
+        "case": "nominative",
+        "explanation": "Pronom personnel féminin au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 40,
+        "russian": "видит",
+        "french": "voit",
+        "case": null,
+        "explanation": "Verbe 'voir' conjugué à la 3ème personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 41,
+        "russian": "кота",
+        "french": "le chat",
+        "case": "accusative",
+        "explanation": "Nom masculin animé au cas accusatif. Objet direct du verbe.",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "russian": "Учитель даёт книгу сестре",
+    "french": "Le professeur donne un livre à la sœur",
+    "words": [
+      {
+        "id": 42,
+        "russian": "Учитель",
+        "french": "Le professeur",
+        "case": "nominative",
+        "explanation": "Nom masculin au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 43,
+        "russian": "даёт",
+        "french": "donne",
+        "case": null,
+        "explanation": "Verbe 'donner' conjugué à la 3ème personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 44,
+        "russian": "книгу",
+        "french": "livre",
+        "case": "accusative",
+        "explanation": "Nom féminin au cas accusatif. Objet direct de l'action.",
+        "position": 2
+      },
+      {
+        "id": 45,
+        "russian": "сестре",
+        "french": "à la sœur",
+        "case": "dative",
+        "explanation": "Nom féminin au cas datif. Destinataire de l'action.",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "russian": "Туристы любуются деревом",
+    "french": "Les touristes admirent l'arbre",
+    "words": [
+      {
+        "id": 46,
+        "russian": "Туристы",
+        "french": "Les touristes",
+        "case": "nominative",
+        "explanation": "Nom masculin au pluriel au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 47,
+        "russian": "любуются",
+        "french": "admirent",
+        "case": null,
+        "explanation": "Verbe 'admirer' conjugué à la 3ème personne du pluriel au présent. Demande l'instrumental.",
+        "position": 1
+      },
+      {
+        "id": 48,
+        "russian": "деревом",
+        "french": "l'arbre",
+        "case": "instrumental",
+        "explanation": "Nom neutre au cas instrumental après le verbe 'любоваться'.",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "russian": "Студенты говорят о книге",
+    "french": "Les étudiants parlent du livre",
+    "words": [
+      {
+        "id": 49,
+        "russian": "Студенты",
+        "french": "Les étudiants",
+        "case": "nominative",
+        "explanation": "Nom masculin au pluriel au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 50,
+        "russian": "говорят",
+        "french": "parlent",
+        "case": null,
+        "explanation": "Verbe 'parler' conjugué à la 3ème personne du pluriel au présent.",
+        "position": 1
+      },
+      {
+        "id": 51,
+        "russian": "о",
+        "french": "de/au sujet de",
+        "case": null,
+        "explanation": "Préposition qui demande toujours le cas prépositionnel.",
+        "position": 2
+      },
+      {
+        "id": 52,
+        "russian": "книге",
+        "french": "livre",
+        "case": "prepositional",
+        "explanation": "Nom féminin au cas prépositionnel après la préposition 'о'.",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "russian": "Мы гуляем с друзьями",
+    "french": "Nous nous promenons avec des amis",
+    "words": [
+      {
+        "id": 53,
+        "russian": "Мы",
+        "french": "Nous",
+        "case": "nominative",
+        "explanation": "Pronom personnel au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 54,
+        "russian": "гуляем",
+        "french": "nous promenons",
+        "case": null,
+        "explanation": "Verbe 'se promener' conjugué à la 1ère personne du pluriel au présent.",
+        "position": 1
+      },
+      {
+        "id": 55,
+        "russian": "с",
+        "french": "avec",
+        "case": null,
+        "explanation": "Préposition qui demande l'instrumental pour indiquer l'accompagnement.",
+        "position": 2
+      },
+      {
+        "id": 56,
+        "russian": "друзьями",
+        "french": "des amis",
+        "case": "instrumental",
+        "explanation": "Nom masculin au pluriel au cas instrumental après la préposition 'с'.",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "russian": "Почтальон отправляет письмо городу",
+    "french": "Le facteur envoie une lettre à la ville",
+    "words": [
+      {
+        "id": 57,
+        "russian": "Почтальон",
+        "french": "Le facteur",
+        "case": "nominative",
+        "explanation": "Nom masculin au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 58,
+        "russian": "отправляет",
+        "french": "envoie",
+        "case": null,
+        "explanation": "Verbe 'envoyer' conjugué à la 3ème personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 59,
+        "russian": "письмо",
+        "french": "lettre",
+        "case": "accusative",
+        "explanation": "Nom neutre au cas accusatif. Objet direct de l'action.",
+        "position": 2
+      },
+      {
+        "id": 60,
+        "russian": "городу",
+        "french": "à la ville",
+        "case": "dative",
+        "explanation": "Nom masculin au cas datif. Destinataire de l'action.",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "russian": "Дети пользуются столом",
+    "french": "Les enfants utilisent la table",
+    "words": [
+      {
+        "id": 61,
+        "russian": "Дети",
+        "french": "Les enfants",
+        "case": "nominative",
+        "explanation": "Nom masculin au pluriel au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 62,
+        "russian": "пользуются",
+        "french": "utilisent",
+        "case": null,
+        "explanation": "Verbe 'utiliser' conjugué à la 3ème personne du pluriel au présent. Demande l'instrumental.",
+        "position": 1
+      },
+      {
+        "id": 63,
+        "russian": "столом",
+        "french": "la table",
+        "case": "instrumental",
+        "explanation": "Nom masculin au cas instrumental après le verbe 'пользоваться'.",
+        "position": 2
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "russian": "Семья живёт в доме",
+    "french": "La famille vit dans la maison",
+    "words": [
+      {
+        "id": 64,
+        "russian": "Семья",
+        "french": "La famille",
+        "case": "nominative",
+        "explanation": "Nom féminin au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 65,
+        "russian": "живёт",
+        "french": "vit",
+        "case": null,
+        "explanation": "Verbe 'vivre' conjugué à la 3ème personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 66,
+        "russian": "в",
+        "french": "dans",
+        "case": null,
+        "explanation": "Préposition qui demande le prépositionnel pour indiquer l'emplacement.",
+        "position": 2
+      },
+      {
+        "id": 67,
+        "russian": "доме",
+        "french": "la maison",
+        "case": "prepositional",
+        "explanation": "Nom masculin au prépositionnel après la préposition 'в' indiquant l'emplacement.",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "russian": "Ветеринар играет с собакой",
+    "french": "Le vétérinaire joue avec le chien",
+    "words": [
+      {
+        "id": 68,
+        "russian": "Ветеринар",
+        "french": "Le vétérinaire",
+        "case": "nominative",
+        "explanation": "Nom masculin au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 69,
+        "russian": "играет",
+        "french": "joue",
+        "case": null,
+        "explanation": "Verbe 'jouer' conjugué à la 3ème personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 70,
+        "russian": "с",
+        "french": "avec",
+        "case": null,
+        "explanation": "Préposition qui demande l'instrumental pour indiquer l'accompagnement.",
+        "position": 2
+      },
+      {
+        "id": 71,
+        "russian": "собакой",
+        "french": "le chien",
+        "case": "instrumental",
+        "explanation": "Nom féminin au cas instrumental après la préposition 'с'.",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "russian": "Кот сидит на окне",
+    "french": "Le chat est assis sur la fenêtre",
+    "words": [
+      {
+        "id": 72,
+        "russian": "Кот",
+        "french": "Le chat",
+        "case": "nominative",
+        "explanation": "Nom masculin au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 73,
+        "russian": "сидит",
+        "french": "est assis",
+        "case": null,
+        "explanation": "Verbe 'être assis' conjugué à la 3ème personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 74,
+        "russian": "на",
+        "french": "sur",
+        "case": null,
+        "explanation": "Préposition qui demande le prépositionnel pour indiquer l'emplacement.",
+        "position": 2
+      },
+      {
+        "id": 75,
+        "russian": "окне",
+        "french": "la fenêtre",
+        "case": "prepositional",
+        "explanation": "Nom neutre au prépositionnel après la préposition 'на' indiquant l'emplacement.",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "russian": "У нас много друзей",
+    "french": "Nous avons beaucoup d'amis",
+    "words": [
+      {
+        "id": 76,
+        "russian": "У",
+        "french": "chez/à",
+        "case": null,
+        "explanation": "Préposition qui demande le génitif pour exprimer la possession.",
+        "position": 0
+      },
+      {
+        "id": 77,
+        "russian": "нас",
+        "french": "nous",
+        "case": "genitive",
+        "explanation": "Pronom personnel au cas génitif après la préposition 'у'.",
+        "position": 1
+      },
+      {
+        "id": 78,
+        "russian": "много",
+        "french": "beaucoup",
+        "case": null,
+        "explanation": "Adverbe de quantité qui demande le génitif pour le nom qui suit.",
+        "position": 2
+      },
+      {
+        "id": 79,
+        "russian": "друзей",
+        "french": "d'amis",
+        "case": "genitive",
+        "explanation": "Nom masculin au pluriel au cas génitif après l'adverbe de quantité 'много'.",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "russian": "Дети играют с мячом",
+    "french": "Les enfants jouent avec une balle",
+    "words": [
+      {
+        "id": 92,
+        "russian": "Дети",
+        "french": "Les enfants",
+        "case": "nominative",
+        "explanation": "Nom au pluriel au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 93,
+        "russian": "играют",
+        "french": "jouent",
+        "case": null,
+        "explanation": "Verbe 'jouer' conjugué à la 3ème personne du pluriel au présent.",
+        "position": 1
+      },
+      {
+        "id": 94,
+        "russian": "с",
+        "french": "avec",
+        "case": null,
+        "explanation": "Préposition qui demande l'instrumental pour indiquer l'accompagnement ou l'instrument.",
+        "position": 2
+      },
+      {
+        "id": 95,
+        "russian": "мячом",
+        "french": "balle",
+        "case": "instrumental",
+        "explanation": "Nom masculin au cas instrumental après la préposition 'с'. L'instrumental indique l'instrument ou l'accompagnement.",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "russian": "Учитель объясняет урок ученикам",
+    "french": "Le professeur explique la leçon aux élèves",
+    "words": [
+      {
+        "id": 96,
+        "russian": "Учитель",
+        "french": "Le professeur",
+        "case": "nominative",
+        "explanation": "Nom masculin au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 97,
+        "russian": "объясняет",
+        "french": "explique",
+        "case": null,
+        "explanation": "Verbe 'expliquer' conjugué à la 3ème personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 98,
+        "russian": "урок",
+        "french": "leçon",
+        "case": "accusative",
+        "explanation": "Nom masculin au cas accusatif. Objet direct de l'action.",
+        "position": 2
+      },
+      {
+        "id": 99,
+        "russian": "ученикам",
+        "french": "aux élèves",
+        "case": "dative",
+        "explanation": "Nom au pluriel au cas datif. Le datif indique les destinataires de l'action (à qui on explique).",
+        "position": 3
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "russian": "Собака бежит по улице",
+    "french": "Le chien court dans la rue",
+    "words": [
+      {
+        "id": 100,
+        "russian": "Собака",
+        "french": "Le chien",
+        "case": "nominative",
+        "explanation": "Nom féminin au cas nominatif. Sujet de la phrase.",
+        "position": 0
+      },
+      {
+        "id": 101,
+        "russian": "бежит",
+        "french": "court",
+        "case": null,
+        "explanation": "Verbe 'courir' conjugué à la 3ème personne du singulier au présent.",
+        "position": 1
+      },
+      {
+        "id": 102,
+        "russian": "по",
+        "french": "le long de/dans",
+        "case": null,
+        "explanation": "Préposition qui demande le datif pour indiquer le mouvement le long de quelque chose.",
+        "position": 2
+      },
+      {
+        "id": 103,
+        "russian": "улице",
+        "french": "rue",
+        "case": "dative",
+        "explanation": "Nom féminin au cas datif après la préposition 'по'. Le datif est utilisé ici pour indiquer le lieu du mouvement.",
+        "position": 3
+      }
+    ]
   }
 ]

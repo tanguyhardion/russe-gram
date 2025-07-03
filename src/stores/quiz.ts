@@ -62,7 +62,7 @@ export const useQuizStore = defineStore('quiz', () => {
     }
   }
 
-  function selectAnswer(answer: string) {
+  function selectAnswer(answer: number) {
     if (quizState.value.answered) return
 
     quizState.value.selectedAnswer = answer
@@ -90,7 +90,7 @@ export const useQuizStore = defineStore('quiz', () => {
   }
 
   function isCorrectAnswer(): boolean {
-    if (!quizState.value.currentQuiz || !quizState.value.selectedAnswer) {
+    if (!quizState.value.currentQuiz || quizState.value.selectedAnswer === null) {
       return false
     }
     return quizState.value.selectedAnswer === quizState.value.currentQuiz.correct

@@ -38,7 +38,7 @@ export interface Quiz {
   wordId: number
   question: string
   options: QuizOption[]
-  correct: string
+  correct: number // Index of the correct option (0-based)
   explanation: string
 }
 
@@ -61,7 +61,7 @@ export interface QuizState {
   currentQuiz: Quiz | null
   score: number
   answered: boolean
-  selectedAnswer: string | null
+  selectedAnswer: number | null
   showExplanation: boolean
 }
 
